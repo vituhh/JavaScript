@@ -20,10 +20,13 @@
         variavel.toLocaleString('pt-BR', {style: 'currency', currency: 'sigla_da_moeda'})
         <ul><li>Formatará o tipo de moeda</li></ul>
     </p>
+    <hr>
     <script>
         var n1 = Number(window.prompt("Indique um número maior que 1.000 e com vírgula"))
-        document.write(`O número com apenas duas casas após a vírgula é: ${n1.toFixed(2)} <br>`)
-        document.write(`O número com vírgula fica: ${n1.toFixed.replace('.', ',')} <br>`)
+        var nFormatado = n1.toFixed(2);
+        document.write(`O número com apenas duas casas após a vírgula é: ${nFormatado} <br>`)
+        nFormatado = nFormatado.replace('.', ',');
+        document.write(`O número com vírgula fica: ${nFormatado} <br>`)
         document.write(`O número com moeda do Brasil é: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>`)
         document.write(`O número com moeda dos Estados Unidos é: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`)
     </script>
