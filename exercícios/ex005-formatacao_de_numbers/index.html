@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de números</title>
+    <style>
+        body{
+            font: normal 20px Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Comandos para formatar Numbers</h1>
+    <p>
+        variavel.toFixed(numero)
+        <ul><li>Indica quantas casas após a vírgula aparecerão</li></ul>
+        variavel.toFixed.replace('.', ',')
+        <ul><li>Transformará o '.' em ','</li></ul>
+        variavel.toLocaleString('pt-BR', {style: 'currency', currency: 'sigla_da_moeda'})
+        <ul><li>Formatará o tipo de moeda</li></ul>
+    </p>
+    <script>
+        var n1 = Number(window.prompt("Indique um número maior que 1.000 e com vírgula"))
+        document.write(`O número com apenas duas casas após a vírgula é: ${n1.toFixed(2)} <br>`)
+        document.write(`O número com vírgula fica: ${n1.toFixed.replace('.', ',')} <br>`)
+        document.write(`O número com moeda do Brasil é: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>`)
+        document.write(`O número com moeda dos Estados Unidos é: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`)
+    </script>
+</body>
+</html>
