@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores aritméticos</title>
+</head>
+<body>
+    <h1>Operadores aritméticos</h1>
+    <ul>
+        <li>'+' -> adição;</li>
+        <li>'-' -> subtração;</li>
+        <li>'*' -> multiplicação;</li>
+        <li>'/' -> divisão;</li>
+        <li>'%' -> módulo;</li>
+        <li>'**' -> potênciação</li>
+    </ul>
+    <hr>
+    <script>
+        var n1 = Number(window.prompt("Escolha o primeiro número: "))
+        var n2 = Number(window.prompt("Escolha o segundo número: "))
+
+        var vezes = n1 * n2
+        var divisao = n1 / n2
+
+        document.write("Operações com os números: <br>")
+        document.write(`Adição: ${n1 + n2} <br>`)
+        document.write(`Subtração: ${n1 - n2} <br>`)
+        document.write(`Multiplicação: ${vezes} <br>`)
+        document.write(`Divisão: ${divisao} <br>`)
+        document.write(`Módulo: ${n1 % n2} <br>`)
+        document.write(`Potenciação: ${n1 ** n2}`)
+    </script>
+</body>
+</html>
