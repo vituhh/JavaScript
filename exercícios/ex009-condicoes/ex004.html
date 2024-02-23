@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da semana</title>
+</head>
+<body>
+    <h1>Sistema de dia da semana</h1>
+    <div id="dia"></div>
+
+    <script>
+        var agora = new Date()
+        var hoje = agora.getDay()
+        var data = agora.getDate()
+
+        var d = document.querySelector('div#dia')
+
+        switch(hoje) {
+            case 0: 
+                d.innerHTML = `Hoje é Domingo-feira, dia ${data}`
+                break
+            case 1: 
+                d.innerHTML = `Hoje é Segunda-feira, dia ${data}`
+                break
+            case 2: 
+                d.innerHTML = `Hoje é Terça-feira, dia ${data}`
+                break
+            case 3: 
+                d.innerHTML = `Hoje é Quarta-feira, dia ${data}`
+                break
+            case 4: 
+                d.innerHTML = `Hoje é Quinta-feira, dia ${data}`
+                break
+            case 5: 
+                d.innerHTML = `Hoje é Sexta-feira, dia ${data}`
+                break
+            case 6: 
+                d.innerHTML = `Hoje é Sábado-feira, dia ${data}`
+                break
+            default:
+                d.innerHTML = '[ERRO] Dia Inválido!'
+        }
+    </script>
+</body>
+</html>

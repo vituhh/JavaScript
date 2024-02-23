@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário</title>
+</head>
+<body>
+    <h1>Sistema de horário</h1>
+    Quantas horas são aí? <input type="number" name="txth" id="txth">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="msgm"></div>
+
+    <script>
+        function verificar(){
+            var hrs = document.querySelector('input#txth')
+            var msg = document.querySelector('div#msgm')
+
+            var hr = Number(hrs.value)
+
+            msg.innerHTML = `Agora são ${hr}h. `
+            if (hr > 4 && hr < 12) {
+                msg.innerHTML += `Bom dia!`
+            } else if (hr >= 12 && hr < 18) {
+                msg.innerHTML += 'Boa tarde!'
+            } else if (hr < 23 || hr > 0 && hr < 4){
+                msg.innerHTML += 'Boa noite!'
+            }
+        }
+    </script>
+</body>
+</html>
