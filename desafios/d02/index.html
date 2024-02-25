@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -11,19 +12,31 @@
     </header>
     <main>
         <section id="verificar">
-            <form action="method"></form>
+            <form action="#" method="post">
+                <p>
+                    Ano de Nascimento:
+                    <input type="number" name="nasc" id="inasc" value="2000">
+                </p>
+                <p>
+                    Sexo:
+                    <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+                    <input type="radio" name="sexo" id="isxfam" value="F"> <label for="isxfem">Feminino</label>
+                </p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </form>
         </section>
         <section id="apresentacao">
             <div id="msg">
-
+                Mensagem...
             </div>
             <div id="img">
-
+                Imagem...
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; @CursoemVideo</p>
+        <p>&copy;CursoemVideo</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
