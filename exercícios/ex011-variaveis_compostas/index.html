@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis Compostas</title>
+</head>
+<body>
+    <h1>Variáveis Compostas</h1>
+    <h2>O que são?</h2>
+    <p>
+        <strong>Variáveis compostas</strong> devem ser capazes de armazenar
+        vários valores em uma mesma estrutura.
+    </p>
+    <h2>Composições</h2>
+    <p>
+        Variáveis compostas também são chamadas de 'array'(vetor). <br>
+        As arrays são organizadas com colchetes. <br>
+        Toda array possui índices, que são as posições. <br>
+        Toda array é composta por elementos. <br>
+        E dentro dos elementos se tem um conteúdo/valor. <br>
+    </p>
+    <h2>Como criar em JS</h2>
+    <p>
+        Para criar, utilizamos o comando 'let'. <br>
+        <strong>Exemplo:</strong> <br>
+        let x = []
+    </p>
+    <hr>
+    <h2>Alguns comandos</h2>
+    <p>
+        <h3>---Criando um vetor---</h3> 
+        let num = [5, 8, 2, 9, 3] <br>
+        <h3>---Pegar um valor--</h3>
+        num[posição]
+        <h3>---Adicionando um novo elemento ao vetor em uma posição específica---</h3> 
+        num[5] = 6 <br>
+        // o vetor agora é [5, 8, 2, 9, 3, 6] <br>
+        <h3>---Adicionando um elemento na última posição--- </h3>
+        num.push(7) <br>
+        // o vetor agora é [5, 8, 2, 9, 3, 6, 7] <br>
+        <h3>---Como saber o comprimento de um vetor---</h3> 
+        num.length <br>
+        // o tamanho do vetor é 7 <br>
+        <h3>---Colocando os elementos em ordem crescente---</h3> 
+        num.sort() <br>
+        // o vetor agora é [2, 3, 5, 6, 7, 8, 9] <br>
+        <h3>---Mostrando o vetor sem a formatação padrão---</h3>
+        for(let i = 0; i &lt; num.length; i++){ <br>
+            console.log(num[i]) <br>
+        } <br>
+        // com isso, aparecerá os valores do vetor um abaixo do outro<br>
+        <h3>---Forma simplificada de percorrer o vetor---</h3>
+        for(let i in num){ <br> <!-- Para cada posição dentro de num-->
+            console.log(num[i]) <br> <!-- mostre isso -->
+        }
+        <h3>---Buscar valor dentro de um vetor---</h3>
+        num.indexOf(valor_desejado) <br>
+        // com isso, aparecerá a posição em que esse valor se encontra
+
+    </p>
+</body>
+</html>
